@@ -19,7 +19,7 @@
              (should= [1 2 3 5 8] (trim-to-target [1 2 3 5 8 13] 10))
              (should= [1 2 3 5 8] (trim-to-target [1 2 3 5 8] 8))))
   (context "euler-2"
-           (it "solves #2"
+           (it "sums all even fib nums less than or equal to target number"
              (should= 10 (euler-2 10))
              (should= 4613732 (euler-2 4000000)))))
 
