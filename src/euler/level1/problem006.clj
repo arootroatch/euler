@@ -9,3 +9,5 @@
 (defn euler-6 [ns]
   (- (square-of-sum ns) (sum-of-squares ns)))
 
+
+
