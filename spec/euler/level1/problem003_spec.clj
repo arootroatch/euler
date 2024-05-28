@@ -1,7 +1,8 @@
 (ns euler.level1.problem003-spec
   (:require
     [speclj.core :refer :all]
-    [euler.level1.problem003 :refer :all]))
+    [euler.level1.problem003 :refer :all]
+    [euler.math :refer [get-primes prime?]]))
 
 ; https://projecteuler.net/problem=3
 
