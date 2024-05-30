@@ -9,7 +9,9 @@
 
   (it "Solves #8"
     (should= 5832 (euler-8 4))
-    (should= 23514624000 (euler-8 13))))
+    (should= 23514624000 (euler-8 13)))
+  (it "creates sub-vectors of given length"
+    (should= [[1 2][2 3]] (->subvecs-of-length 2 [1 2 3]))))
 
 
 (run-specs)
