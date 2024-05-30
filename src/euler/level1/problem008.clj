@@ -11,12 +11,12 @@
     (cons (take target coll)(->subvecs-of-length target (rest coll)))))
 
 (defn euler-8 [n]
-  (let [digits (->> thousand-digit-number
-                    (create-vector-of-digits)
-                    (->subvecs-of-length n))]
- (->> (map #(reduce * %) digits)
+ (->> thousand-digit-number
+      (create-vector-of-digits)
+      (->subvecs-of-length n)
+      (map #(reduce * %))
       (sort <)
       (last))
-  ))
+  )
 
 
