@@ -10,4 +10,5 @@
                 (empty? zeroes))))
 
 (defn get-primes [number]
-  (filter prime? (range 2 number)))
+  (when-not (zero? number)
+    (filter prime? (range 2 number))))

@@ -5,18 +5,13 @@
 (defn create-vector-of-digits [n]
   (map #(read-string (str %)) (str n)))
 
-(defn ->subvecs-of-length [target coll]
-  (if (= (count coll) target)
-    [coll]
-    (cons (take target coll)(->subvecs-of-length target (rest coll)))))
-
 (defn euler-8 [n]
  (->> thousand-digit-number
       (create-vector-of-digits)
-      (->subvecs-of-length n)
+      (partition n 1)
       (map #(reduce * %))
       (sort <)
-      (last))
-  )
+      (last)))
+
 
 
