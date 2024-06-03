@@ -22,8 +22,8 @@
     (should= false (prime? 1)))
 
   (it "generates all primes number <= target"
-    (should= [2 3 5 7 11 13] (get-primes 15)))
-  )
+    (should= [2 3 5 7 11 13] (get-primes 15))))
+
 
 
 

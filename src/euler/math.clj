@@ -12,3 +12,9 @@
 (defn get-primes [number]
   (when-not (zero? number)
     (filter prime? (range 2 number))))
+
+(defmulti coffee-bot identity)
+(defmethod coffee-bot :V60 [_] "Here’s your pour over!")
+(defmethod coffee-bot :Nespresso [_] "Here’s your Nespresso!")
+(defmethod coffee-bot :default [_] "Here's your coffee!")
+(defn make-coffee ([] (coffee-bot nil)) ([x] (coffee-bot x)))

@@ -14,8 +14,8 @@
 
     (it "greater than or equal to target number"
       (should= [1 2 3 5 8 13] (generate-fibs 10))
-      (should= [1 2 3 5 8] (generate-fibs 8)))
-    )
+      (should= [1 2 3 5 8] (generate-fibs 8))))
+
 
   (it "ensure fib seq doesn't exceed target number"
     (should= [1 2 3 5 8] (trim-to-target [1 2 3 5 8 13] 10))
@@ -23,8 +23,8 @@
 
   (it "sums all even fib nums less than or equal to target number"
     (should= 10 (euler-2 10))
-    (should= 4613732 (euler-2 4000000)))
-  )
+    (should= 4613732 (euler-2 4000000))))
+
 
 
 

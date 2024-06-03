@@ -11,7 +11,7 @@
     (should= 4 (euler-5 [2 4]))
     (should= 2520 (euler-5 (range 1 11)))
     (should= 232792560 (euler-5 (range 1 21))))
-  (describe "gcd"
+  (context "gcd"
     (it "is n if a = b"
       (should= 3 (gcd 3 3)))
     (it "is b if b divides a"
